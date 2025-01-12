@@ -1,0 +1,28 @@
+{
+  "name": "dayme",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "dayme": "./index.js"
+  },
+  "scripts": {
+    "create": "node index.js"
+  },
+  "keywords": [
+    "dayme",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "react-router",
+    "dayme-stack",
+    "dayme-stack-template",
+    "dayme-stack-template-react",
+    "dayme-stack-template-react-typescript",
+    "dayme-stack-template-react-typescript-tailwindcss",
+    "dayme-stack-template-react-typescript-tailwindcss-react-router",
+    "dayme-stack-template-react-typescript-tailwindcss-react-router-vite"
+  ],
+  "author": "Dayme",
+  "license": "ISC",
+  "description": "Utility for creating React typescript projects with TailwindCSS and React Router by Dayme"
+}
