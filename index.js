@@ -37,7 +37,7 @@ function copyFolderRecursiveSync(source, target) {
 
 // Функция для копирования шаблона в новый проект
 function createProject(projectName) {
-  const templatePath = path.join(__dirname, 'template');
+  const templatePath = path.join(__dirname, 'templates/react');
   const projectPath = path.join(process.cwd(), projectName);
 
   // Копируем шаблон в новый проект

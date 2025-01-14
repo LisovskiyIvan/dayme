@@ -6,7 +6,8 @@
     "dayme": "./index.js"
   },
   "scripts": {
-    "create": "node index.js"
+    "create": "node index.js",
+    "dev": "node index.js create"
   },
   "keywords": [
     "dayme",
@@ -15,12 +16,10 @@
     "tailwindcss",
     "react-router",
     "dayme-stack",
+    "template",
+    "frontend-template",
     "dayme-stack-template",
-    "dayme-stack-template-react",
-    "dayme-stack-template-react-typescript",
-    "dayme-stack-template-react-typescript-tailwindcss",
-    "dayme-stack-template-react-typescript-tailwindcss-react-router",
-    "dayme-stack-template-react-typescript-tailwindcss-react-router-vite"
+    "boilerplate"
   ],
   "author": "Dayme",
   "license": "ISC",
