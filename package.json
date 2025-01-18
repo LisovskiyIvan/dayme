@@ -19,9 +19,20 @@
     "template",
     "frontend-template",
     "dayme-stack-template",
-    "boilerplate"
+    "boilerplate",
+    "vue",
+    "pinia",
+    "eslint",
+    "prittier",
+    "vite",
+    "vite-plugin-react",
+    "vite-plugin-vue",
+    "tailwindcss"
   ],
   "author": "Dayme",
   "license": "ISC",
-  "description": "Utility for creating React typescript projects with TailwindCSS and React Router by Dayme"
+  "description": "Utility for creating React and Vue typescript projects by Dayme",
+  "dependencies": {
+    "inquirer": "^12.3.2"
+  }
 }

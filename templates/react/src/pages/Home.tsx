@@ -40,7 +40,7 @@ export default function Home() {
           
           <div className="mt-8">
             <code className="px-4 py-2 bg-gray-800 text-white rounded-lg">
-              npx create-dayme-app my-app
+              npx dayme create my-app
             </code>
           </div>
 

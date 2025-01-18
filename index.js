@@ -1,14 +1,11 @@
 #!/usr/bin/env node
-
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const inquirer = require('inquirer');
 
-// Функция для копирования файлов и директорий
 function copyFileSync(source, target) {
   const targetFile = target;
 
-  // Если директория не существует, создаем её
   if (!fs.existsSync(path.dirname(targetFile))) {
     fs.mkdirSync(path.dirname(targetFile), { recursive: true });
   }
@@ -35,15 +32,12 @@ function copyFolderRecursiveSync(source, target) {
   });
 }
 
-// Функция для копирования шаблона в новый проект
-function createProject(projectName) {
-  const templatePath = path.join(__dirname, 'templates/react');
+function createProject(projectName, template) {
+  const templatePath = path.join(__dirname, 'templates', template);
   const projectPath = path.join(process.cwd(), projectName);
 
-  // Копируем шаблон в новый проект
   copyFolderRecursiveSync(templatePath, projectPath);
 
-  // Устанавливаем зависимости
   console.log('\n');
   console.log(`Project ${projectName} created successfully!`);
   console.log('\n');
@@ -51,19 +45,32 @@ function createProject(projectName) {
   console.log('npm i');
   console.log('npm run dev');
   console.log('\n');
+
+  console.log(`Project ${projectName} created successfully!`);
 }
 
-// Получаем имя проекта из аргументов командной строки
-const [,, command, projectName] = process.argv;
+async function run() {
+  const [,, command, projectName] = process.argv;
 
-if (command !== 'create') {
-  console.error('Invalid command. Use "create <project-name>".');
-  process.exit(1);
+  if (command !== 'create') {
+    console.error('Invalid command. Use "create <project-name>".');
+    process.exit(1);
+  }
+  if (!projectName) {
+    console.error('Project name is required.');
+    process.exit(1);
+  }
+
+  const answers = await inquirer.createPromptModule()([
+    {
+      type: 'list',
+      name: 'template',
+      message: 'Choose a template:',
+      choices: ['react', 'vue'],
+    },
+  ]);
+
+  createProject(projectName, answers.template);
 }
 
-if (!projectName) {
-  console.error('Please provide a project name.');
-  process.exit(1);
-}
-
-createProject(projectName);
+run();
