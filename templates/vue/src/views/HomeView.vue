@@ -1,14 +1,13 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center relative">
-      <a href="https://github.com/LisovskiyIvan"
-         className="absolute top-0 right-0"
-         target="_blank"
-         aria-label="View source on GitHub"
-      >
+  <div className="min-h-screen bg-gray-50 flex items-center justify-center relative">
+    <a
+      href="https://github.com/LisovskiyIvan"
+      className="absolute top-0 right-0"
+      target="_blank"
+      aria-label="View source on GitHub"
+    >
       <svg
         width="80"
         height="80"
@@ -28,62 +27,61 @@
           fill="currentColor"
         />
       </svg>
-      </a>
+    </a>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl">
-            Dayme Vue Template
-          </h1>
-          <p className="mt-4 text-xl text-gray-600">
-            Быстрый старт Vue-приложений с настроенными Tailwind CSS, Vue Router, Pinia и TypeScript
-          </p>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl">Dayme Vue Template</h1>
+        <p className="mt-4 text-xl text-gray-600">
+          Быстрый старт Vue-приложений с настроенными Tailwind CSS, Vue Router, Pinia и TypeScript
+        </p>
 
-          <div className="mt-8">
-            <code className="px-4 py-2 bg-gray-800 text-white rounded-lg">
-              npx dayme create my-app
-            </code>
+        <div className="mt-8">
+          <code className="px-4 py-2 bg-gray-800 text-white rounded-lg">
+            npx dayme create my-app
+          </code>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold">⚡️ Vite</h3>
+            <p className="mt-2 text-gray-600 text-lg">Сверхбыстрый инструмент сборки</p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold">⚡️ Vite</h3>
-              <p className="mt-2 text-gray-600 text-lg">Сверхбыстрый инструмент сборки</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold">🎨 Tailwind CSS</h3>
-              <p className="mt-2 text-gray-600 text-lg">Современные утилитарные стили</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold">📝 TypeScript</h3>
-              <p className="mt-2 text-gray-600 text-lg">Типобезопасность из коробки</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold">🛠️ Vue Router</h3>
-              <p className="mt-2 text-gray-600 text-lg">Маршрутизация и навигация</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold">📦 Pinia</h3>
-              <p className="mt-2 text-gray-600 text-lg">Управление состоянием</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold">🚀 Prittier и ESLint</h3>
-              <p className="mt-2 text-gray-600 text-lg">Форматирование кода</p>
-            </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold">🎨 Tailwind CSS</h3>
+            <p className="mt-2 text-gray-600 text-lg">Современные утилитарные стили</p>
           </div>
 
-          <div className="mt-12">
-            <a
-              href="https://github.com/LisovskiyIvan/dayme" target="_blank"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-            >
-              Начать работу
-            </a>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold">📝 TypeScript</h3>
+            <p className="mt-2 text-gray-600 text-lg">Типобезопасность из коробки</p>
           </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold">🛠️ Vue Router</h3>
+            <p className="mt-2 text-gray-600 text-lg">Маршрутизация и навигация</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold">📦 Pinia</h3>
+            <p className="mt-2 text-gray-600 text-lg">Управление состоянием</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold">🚀 Prittier и ESLint</h3>
+            <p className="mt-2 text-gray-600 text-lg">Форматирование кода</p>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <a
+            href="https://github.com/LisovskiyIvan/dayme"
+            target="_blank"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+          >
+            Начать работу
+          </a>
         </div>
       </div>
     </div>
+  </div>
 </template>

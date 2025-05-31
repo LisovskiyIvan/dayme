@@ -4,7 +4,7 @@ Dayme - это простой и современный шаблон для бы
 
 ## Особенности
 ### React
-- ⚛️ [React 18](https://react.dev/) 
+- ⚛️ [React](https://react.dev/) 
 - ⚡️ [Vite](https://vitejs.dev/) 
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) 
 - 📝 [TypeScript](https://www.typescriptlang.org/) 
