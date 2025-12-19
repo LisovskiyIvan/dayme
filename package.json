@@ -3,7 +3,7 @@
   "version": "1.5.0",
   "main": "index.js",
   "bin": {
-    "dayme": "./index.js"
+    "dayme": "index.js"
   },
   "scripts": {
     "create": "node index.js",
