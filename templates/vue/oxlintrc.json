@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "vue", "import", "unicorn"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "eqeqeq": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["*.test.ts", "*.spec.ts"],
+      "rules": {
+        "no-explicit-any": "off"
+      }
+    }
+  ]
+}
